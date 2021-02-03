@@ -10,11 +10,13 @@ export default function App() {
   const clearNumber = () => setCount(0);
 
     return (
-      <div>
+      <div className="container">
         <span>{count}</span>
-        <button onClick={increment}>+</button>
-        <button onClick={decrement}>-</button>
-        <div>
+        <div className="buttons">
+          <button onClick={increment}>+</button>
+          <button onClick={decrement}>-</button>
+        </div>
+        <div className="clear">
           <button onClick={clearNumber}>Clear</button>
         </div>
       </div>
